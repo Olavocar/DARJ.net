@@ -1,5 +1,6 @@
 <?php require_once "connection.php";
-
+session_start();
+ob_start();
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
