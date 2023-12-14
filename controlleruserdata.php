@@ -38,7 +38,7 @@ $data_check = mysqli_query($con, $insert_data);
 if($data_check){
     $subject = "Código de verificação por email";
     $message = "Seu código de verificação é $code";
-    $sender = "From: daarearjcadastro@gmail.com";
+    $sender = "From: daarearj@gmail.com";
     if(mail($email, $subject, $message, $sender)){
         $info = "Enviamos um código de verificação para o seu email - $email";
         $_SESSION['info'] = $info;
@@ -120,7 +120,7 @@ if($data_check){
             if($run_query){
                 $subject = "Código de redefinição de senha";
                 $message = "Seu código de redefinição de senha é $code";
-                $sender = "From: daarearjcadastro@gmail.com";
+                $sender = "From: daarearj@gmail.com";
                 if(mail($email, $subject, $message, $sender)){
                     $info = "Enviamos um código de redefinição de senha para o seu email - $email";
                     $_SESSION['info'] = $info;
@@ -155,8 +155,8 @@ if($data_check){
             $errors['otp-error'] = "Código incorreto!";
         }
     }
-    //if user click change senha button
-    if(isset($_POST['change-senha'])){
+    //if user click change password button
+    if(isset($_POST['change-password'])){
         $_SESSION['info'] = "";
         $senha = mysqli_real_escape_string($con, $_POST['senha']);
         $csenha = mysqli_real_escape_string($con, $_POST['csenha']);
@@ -172,7 +172,7 @@ if($data_check){
             if($run_query){
                 $info = "Você alterou sua senha com sucesso. Agora você pode logar com sua nova senha.";
                 $_SESSION['info'] = $info;
-                header('Location: password-changed.php');
+                header('Location: senha-alterada.php');
             }else{
                 $errors['db-error'] = "Falha ao trocar sua senha!";
             }

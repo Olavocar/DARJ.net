@@ -1,7 +1,6 @@
 <?php require_once "controlleruserdata.php"; ?>
 <!doctype html>
 <html>
-
 <head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RNBEEP96R5"></script>
@@ -12,9 +11,10 @@
 
   gtag('config', 'G-RNBEEP96R5');
 </script>
+
 <meta charset=utf-8>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vídeos</title>
+<title>Afiliados</title>
 <link href=favicon_io/favicon-16x16.png rel=icon>
 <link href=estilo.css rel=stylesheet>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-240370538-2"></script>
@@ -50,6 +50,8 @@ if($email != false && $senha != false){
 <button type="button" class="w3-button"><a href="logout-user.php">Sair</a></button>
 </div>
 
+<body id=bg>
+
 <header id=topo>
 <div id=logo>
 <img src="imgs/logonovodarj.png" alt="Logo" title="Logo">
@@ -57,7 +59,6 @@ if($email != false && $senha != false){
 <img src=imgs/arquivos/banner.jpg width="100%" alt="Favela&Piano" title="Favela&Piano">
 </div>
 </div>
-
 
 <div class=blank>
 <div class-=links><b>
@@ -109,36 +110,30 @@ https://wa.me/+5521999051545?text=Somos%20a%20Da%C3%81rea%20RJ!%20Atenderemos%20
     <a href="novidades.php">Novidades</a>
 </nav>
 </table>
+
+
 <br>
 
 <main id=conteudo>
-  <table>
-  <div id="publi">
 
-  </div>
-</table>
+<div class="post">
+<b><h2>Novidades</h2></b>
+<br>
+<div>
+    <b>
+Aguardem...
+</b>
 
 <div>
-<b><h2>Vídeos</h2><p></p></b>
-<div class="video">
-<iframe width="400" height="300" 
-src="https://www.youtube.com/embed/ZNH3Fr4gsV4" 
-title="[vola_o] - DNA (xinguvideo)" 
-frameborder="0" 
-allow="accelerometer; autoplay; clipboard-write; 
-encrypted-media; gyroscope; picture-in-picture; web-share" 
-allowfullscreen></iframe>
+</div>
 </div>
 
-<div>
-
-</div>
-<div id=lateral></div>
 </main>
 
-<br><br>
+<br>
 
 <footer class="style"><b>Contato:<br>daarearj@gmail.com | +55 (21) 99905-1545</b>
+
 </footer>
 
 </body>

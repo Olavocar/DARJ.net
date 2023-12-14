@@ -4,69 +4,65 @@ body{
     font-family:'Gloucester MT Extra Condensed','sans-serif','Arial';
     background-image:linear-gradient(yellow,gray);
 }
-	
+
+header{
+    width:100%;
+    height:100%;
+}
+
 #menu{
-    height:auto;
+    width:100%;
+    height:100%;
     justify-content:center;
     font-size:18px;
     font-weight:bold;
+    color: black;
 }
 
 #menu a{
     margin:0 10px;
     text-align:center;
     font:bolder;
+    color: black;
 }
 
 .session{
-    width:300px;
-    height:120px;
+    width:100%;
+    height:100%;
     float:left;
-    display:flex;
-}
-
-#1{
-    display:block;
-}
-
-#2{
     display:flex;
 }
 
 #bg{
     width:100%;
+    height:100%;
 }
 
 #topo{
     width:100%;
-    height:180px;
+    height:100%;
     margin:auto;
-    float:left
 }
 
 #topo2{
     width:100%;
-    height:20px;
+    height:100%;
     margin:auto;
 }
 
 #logo{
-    width:auto;
-    height:auto;
-    float:left;
-    display:flex
+    width:100%;
+    height:100%;
 }
 
 #banner{
     width:100%;
-    height:65px;
-    float:left;
-    display:flex
+    height:100%;
 }
 
 .botao{
     width:100%;
-    height:2px;
+    height:100%;
     float:left;
     display:flex;
     justify-content:center;
@@ -74,12 +70,14 @@ body{
 }
 
 .botao a{
+    width:100%;
+    height:100%;
     text-align:center
 }
 
 #alto{
-    width:auto;
-    height:auto;
+    width:100%;
+    height:100%;
     float:left;
     margin:auto;
     display:flex
@@ -90,20 +88,18 @@ body{
     height:100%;
     margin:auto;
     float:left;
-    display:flex
 }
 
 .blank{
-    width:auto;
-    height:auto;
+    width:100%;
+    height:100%;
     margin:auto;
-    margin-left:auto;
     float:right
 }
 
 .links{
-    width:auto;
-    height:auto;
+    width:100%;
+    height:100%;
     float:right;
     margin:auto;
     font-family:'Gloucester MT Extra Condensed','sans-serif','Arial';
@@ -112,25 +108,25 @@ body{
 }
 
 .icones{
-    width:auto;
-    height:auto;
+    width:100%;
+    height:100%;
     margin:auto;
-    display:flex
+}
+
+main{
+    width: 100%;
+    height: 100%;
 }
 
 #conteudo{
     width:100%;
-    
+    height:100%;    
     overflow:hidden;
-    display:flex;
-    margin:0px
 }
 
 #publi{
-    width:auto;
+    width:100%;
     height:100%;
-    float:left;
-    display:flex
 }
 
 #entrada{
@@ -143,17 +139,17 @@ body{
 }
 
 #texto{
-    width:80%;
-    height:100px
+    width:100%;
+    height:100%;
 }
 
 .entrada{
-    width:200px;
+    width:100%;
     height:100%;
 }
 
 #lateral{
-    width:200px;
+    width:100%;
     height:100%;
     margin:auto;
     float:left;
@@ -161,23 +157,21 @@ body{
 }
 
 #miolo{
-    width:auto;
+    width:100%;
     height:100%;
     margin-left:10px;
 }
 
 .img{
-    width:auto;
-    height:auto;
+    width:100%;
+    height:100%;
     margin-left:20px
 }
 
 .espaco{
     width:100%;
     height:100%;
-    margin-left:20px;
-    margin-top:0px;
-    display:flex
+    margin-left:0px;
 }
 
 .espaco2{
@@ -191,45 +185,116 @@ body{
 .post{
     width:100%;
     height:100%;
-    margin-left:20px;
-    margin-top:0px;
     display:block;
 }
 
-.mix{width:180px;height:auto;float:left}
+.mix{
+    width:100%;
+    height:100%;
+    float:left}
 
-.mix2{width:180px;height:auto;float:left;clear:both}
+.mix2{
+    width:100%;
+    height:100%;
+    float:left;
+    clear:both}
 
-.miudo{width:100%;display:flex;}
+.miudo{
+    width:100%;
+    height:100%;
+    display:flex;}
 
 .adictos{
     width:100%;
     height:100%;
 }
 
-.main{width:100%;height:100%;display:flex;}
+.main{
+    width:100%;
+    height:100%;
+    display:flex;
+}
 
 .afili{width:100%;height:100%;margin:auto;}
 
-.box{width:100px;height:600px;justify-content:center;align-items:center;border:12px;margin-top:100px;margin-bottom:auto;margin:auto;margin-left:auto;margin-right:auto;}
+.box{
+    width:100%;
+    height:100%;
+    justify-content:center;
+    align-items:center;
+    border:12px;
+    margin-top:100px;
+    margin-bottom:auto;
+    margin:auto;
+    margin-left:auto;
+    margin-right:auto;}
 
-.box2{width:100%;height:100%;margin:auto;}
+.box2{
+    width:100%;
+    height:100%;
+    margin:auto;
+}
 
-.box3{border:1px;}
+.box3{
+    border:1px;
+}
 
-.box4{width:auto;height:auto;justify-content:center;align-items:center;margin:auto;margin-left:auto;margin-right:auto;margin-top:auto;margin-bottom:auto;}
+.box4{
+    width:100%;
+    height:100%;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:auto;
+    margin-bottom:auto;}
 
-.photo{width:160px;height:240px;display:flex;} img .photo{border:10px;}
+.photo{
+    width:100%;
+    height:100%;
+} 
 
-#img{width:auto;height:auto;margin:auto;margin-left:5px}img #img{width:790px}
+img .photo{
+    border:10px;
+}
 
-#playlists{margin:auto}.playlists{display:flex}
+#img{
+    width:100%;
+    height:100%;
+    margin:auto;
+    margin-left:5px
+}
 
-.aside{width:auto;height:auto;float:left}
+img #img{
+    width:100%;
+    height:100%;
+}
 
-#vacuo{width:10px;height:800px;float:left}
+#playlists{
+    margin:auto
+}
 
-#artigo{width:auto;height:auto;float:left;padding-left:20px}
+.playlists{
+    display:flex
+}
+
+.aside{
+    width:100%;
+    height:100%;
+    float:left
+}
+
+#vacuo{
+    width:100%;
+    height:100%;
+    float:left}
+
+#artigo{
+    width:100%;
+    height:100%;
+    float:left;
+    padding-left:20px}
 
 .title{
     width:100%;
@@ -238,57 +303,74 @@ body{
 }
         
 
-#tabela{width:755px;height:500px;display:flex;}
+#tabela{   
+    width:100%;
+    height:100%;
+    display:flex;}
 
-#pl1{width:100%;height:100%;}
+#pl1{
+    width:100%;
+    height:100%;
+}
 
-img #pl1{height:600px}
+img #pl1{
+    width:100%;
+    height:100%;
+}
 
-#pl2{width:100%;height:100%;margin-left:5px}
+#pl2{
+    width:100%;
+    height:100%;
+    margin-left:5px}
 
 
 .type{
-    width:auto;
+    width:100%;
     height:100%;
     font-family:'Gloucester MT Extra Condensed','sans-serif','Arial';
     font-size:14px;
     font:bolder;
 }
 
-#forma{width:auto;
+#forma{
+    width:100%;
     height:100%;
 }
 
-#quadro{width:1200px;
+#quadro{
+    width:100%;
     height:100%;
 }
 
 #menuopcao{
-    width:1200px;
-    height:auto;
+    width:100%;
+    height:100%;
     overflow:hidden;
     background-color:orange
 }
 
 #master{
-    width:1280px;
-    height:auto;
+    width:100%;
+    height:100%;
     background-color:black;
     overflow:hidden;
 }
 
 #titulo{
-    width:auto;
+    width:100%;
     height:100%;
 }
 
 .button{
+    width:100%;
+    height:100%;
     display:flex;
     float:right;
 }
 
-#lado{width:auto;
-    height:auto;
+#lado{
+    width:100%;
+    height:100%;
     float:left;
     margin-top:0px;
     margin-left:10px;
@@ -296,18 +378,18 @@ img #pl1{height:600px}
 }
 
 .coluna1{
-    width:auto;
-    height:auto;
+    width:100%;
+    height:100%;
 }
 
 .coluna2{
-    width:auto;
-    height:auto;
+    width:100%;
+    height:100%;
 }
 
 .coluna3{
-    width:auto;
-    height:auto;
+    width:100%;
+    height:100%;
 }
 
 .id a{
@@ -324,9 +406,8 @@ img #pl1{height:600px}
 }
 
 #puxa{
-    width:auto;
+    width:100%;
     height:100%;
-    margin-top:-99px;
 }
 
 .arranjo{
@@ -339,19 +420,23 @@ font:bolder;
 font-style:italic
 }
 
-#block{
-    height:100%;
+#block{   
+    width:100%;
+    height:100%;    
     display:block;
 }
 
 .texto{
+    width: 100%;
+    height: 100%;
     font-size:22px;
-    margin-left:60px;
+    margin-left: auto;
     color:white;
     font-family:'Glocester MT Extra Condensed','sans-serif','Arial';
 }
 
 .form{
+    width:100%;
     height:100%;
     font-size:12px;
 }
@@ -369,9 +454,8 @@ font-style:italic
 }
 
 .bio{
-    height:80%;
     width:100%;
-    margin-left:60px;
+    height:100%;
     font-size:20px;
 }
 

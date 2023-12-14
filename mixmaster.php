@@ -1,3 +1,4 @@
+<?php require_once "controlleruserdata.php"; ?>
 <!doctype html>
 <html>
 <head>
@@ -19,8 +20,6 @@
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","UA-240370538-2");</script>
 <meta name=lomadee-verification content=23139291 />
 </head>
-
-<?php require_once "controlleruserdata.php"; ?>
 
 <?php 
 $email = $_SESSION['email'];
@@ -45,70 +44,20 @@ if($email != false && $senha != false){
 }
 ?>
 
-<div class="session">
-<b>Olá, <?php echo $fetch_info['nome'];?></b>
-<button type="button" class="w3-button"><a href="logout-user.php">Sair</a></button>
-</div>
-<body id=bg><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Menu</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="home.php">Início</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="gravacao.php">Gravação</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="mixmaster.php">Mix/Master</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="beats.php">Beats</a>
-            </li>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="videoclipes.php">Video Clipes</a>
-            </li>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="distribuicaodigital.php">Distribuição Digital</a>
-            </li>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="mktdigital.php">Marketing Digital & Impulsionamento</a>
-            </li>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="playlists.php">Playlists</a>
-            </li>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contato.php">Contato</a>
-            </li>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="videos.php">Videos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="afiliados.php">Afiliados</a>
-            </li>
-            </ul>
-          </div>
-        </div>
-    </nav>
+<body id=bg>
+  
+<link href="estilo.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+ 
+    <b>Ola <?php echo $fetch_info['nome'] ?></b><button type="button" class="btn btn-light"><a href="logout-user.php">Logout</a></button>
+    
 <header id=topo>
 <div id=logo>
-<img src=imgs/logonovodarj.png alt=Logo title=Logo>
+<img src="imgs/logonovodarj.png" alt="Logo" title="Logo">
 <div id=imagem>
-<img src=imgs/arquivos/banner.jpg width="720px" alt=Favela&Piano title=Favela&Piano>
+<img src=imgs/arquivos/banner.jpg width="100%" alt="Favela&Piano" title="Favela&Piano">
 </div>
 </div>
+
 <div class=blank>
 <div class-=links><b>
 siga nossas redes sociais:
@@ -141,14 +90,53 @@ https://wa.me/+5521999051545?text=Somos%20a%20Da%C3%81rea%20RJ!%20Atenderemos%20
 </div>
 </div>
 </header>
-<main id=conteudo><article id="publi"><!-- BEGIN -->
-<script src="//ad.lomadee.com/banners/script.js?sourceId=37684855&dimension=15&height=600&width=160&method=0" type="text/javascript" language="javascript"></script>
-<!-- END --></article><article class=img>
+
+<table>
+<nav id="menu">
+  <div class="botoes">
+    <a href="home.php">Inicio</a>
+    <a href="gravacao.php">Gravaçao</a>
+    <a href="mixmaster.php">Mix/Master</a>
+    <a href="beats.php">Beats</a>
+    <a href="videoclipes.php">VideoClipes</a>
+    <a href="distribuicaodigital.php">Distibuiçao Digital</a>
+    <a href="mktdigital.php">Marketing Digital</a>
+    <a href="playlists.php">Playlists</a>
+    <a href="videos.php">Videos</a>
+    <a href="afiliados.php">Afiliados</a>
+    <a href="contato.php">Contato</a>
+    <a href="novidades.php">Novidades</a>
+</nav>
+</table>
+
+
+<br>
+
+<main id=conteudo>
+  <table>
+    <td>
+<div id="publi">
+
+</div>
+</td>
+
+<td>
+<div class=img>
 <div>
-<div class=mix><img src=imgs/arquivos/mesadesom.jpg alt="Mesa de Som" title="Mesa de Som"></div>
-<div class=mix2><img src=imgs/arquivos/mesadesom2.jpg alt="Mesa de Som" title="Mesa de Som"></div>
-</div></article>
-<article class=espaco><b><h2>Mixagem & Masterização</h2>
+<div class=mix>
+<img src=imgs/arquivos/mesadesom.jpg alt="Mesa de Som" title="Mesa de Som">
+</div>
+<div class=mix2>
+<img src=imgs/arquivos/mesadesom2.jpg alt="Mesa de Som" title="Mesa de Som"></div>
+</div>
+</div>
+</td>
+
+</table>
+
+<div class=espaco>
+
+<b><h2>Mixagem & Masterização</h2>
 <p>
 <h4>Mixagem\Masterização</h4>
 </p>
@@ -156,44 +144,50 @@ Mande seus arquivos de áudio (em pistas) para mixagem e masterização.</p>
 
 <?php
 
-    session_start();    
+// Receber os dados do formulário
+$dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
+// Acessa o IF quando o usuário clicar no botão
+if (!empty($dados['SendFile'])) {
+
+    // Receber os arquivos do formulário
     $arquivo = $_FILES['arquivo'];
 
-    if(isset($_FILES['arquivo'])){
+    // Ler o array de arquivos
+    for ($cont = 0; $cont < count($arquivo['name']); $cont++) {
 
-    if($arquivo['error'])
-       die("Falha ao enviar arquivo!");
+        // Criar o endereço de destino das imagens
+        $destino = "mixagem/" . $arquivo['name'][$cont];
 
-       $pasta = "mixagem/";
-       $nomedoarquivo = $arquivo['name'];
-       $novonomedoarquivo = uniqid();
-       $extensao = strtolower(pathinfo($nomedoarquivo, PATHINFO_EXTENSION));
+        // Acessa o IF quando realizar o upload corretamente
+        if (move_uploaded_file($arquivo['tmp_name'][$cont], $destino)) {
+            $_SESSION['msg'] = "<p style='color: green;'>Upload realizado com sucesso!</p>";
+        } else {
+            $_SESSION['msg'] = "<p style='color: #f00;'>Erro: Upload não realizado com sucesso!</p>";
+        }
+    }
 
-       if($extensao != "mp3" && $extensao != "wav")
-          die("Tipo de arquivo inválido!");
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $telefone = $_POST['telefone'];
+    $destino = $_POST['path'];
 
-          $path = $pasta . $novonomedoarquivo . "." . $extensao;
-          $deu_certo = move_uploaded_file($arquivo['tmp_name'], $path);
-          if($deu_certo)
-          {
-              $nome = $_POST['nome'];
-              $email = $_POST['email'];
-              $telefone = $_POST['telefone'];
-              $path = $_POST['path'];
-
-              $result = mysqli_query($con, "INSERT INTO mixagem(nome, email, telefone, arquivo, path) VALUES ('$nome', '$email', '$telefone', '$nomedoarquivo', '$path')") or die($mysqli->error);
-              echo "<p>Arquivo enviado com sucesso</p>";
-    }  else
-              echo "<p>Falha ao enviar arquivo</p>";
+    $result = mysqli_query($con, "INSERT INTO mixagem(nome, email, telefone, arquivo, path) VALUES ('$nome', '$email', '$telefone', '$nomedoarquivo', '$destino')") or die($mysqli->error);
     
     }
-    
-    ?>
 
-    <!-- Formulário para cadastrar múltiplos arquivos blob no banco de dados -->
-    <form method="POST" action="pagamento.php" enctype="multipart/form-data">
-    <b>Tracks para mixagem (somente em formatos wav/mp3):</b>    
+  // Imprimir a mensagem de erro ou sucesso da variável global
+  if(isset($_SESSION['msg'])){
+      echo $_SESSION['msg'];
+      unset($_SESSION['msg']);
+  }
+  ?>
+    
+<!-- INICIO FORMULÁRIO -->
+<!-- Obrigatório o uso do atributo enctype para trabalhar com imagem-->
+<form method="POST" action="" enctype="multipart/form-data">
+    
+<b>Tracks para mixagem (somente em formatos wav/mp3):</b>    
         <label>Nome: </label>
         <input type="text" name="nome" placeholder="Nome completo"><br><label>Nome: </label>
         <label>E-mail: </label>
@@ -203,15 +197,24 @@ Mande seus arquivos de áudio (em pistas) para mixagem e masterização.</p>
         <br>
         <label>Arquivos de Áudio: </label>
         <input type="file" name="arquivo" multiple="multiple" accept=".mp3, .wav"><br><br>
+        <input type="submit" name="SendFile" value="Enviar" accept=".mp3, .wav">
+</form>
+<!-- FIM FORMULÁRIO -->
 
-        <input type="submit" name="arquivo" value="Enviar"><br><br>
-    </form>
+</div>
 
-</article><article></article><!-- BEGIN -->
-<script src="//ad.lomadee.com/banners/script.js?sourceId=37684855&dimension=8&height=250&width=250&method=0" type="text/javascript" language="javascript"></script>
-<!-- END --></article>
+<div>
+
+</div>
+
 </main>
+
+<br>
+<br>
+
 <footer class="style"><b>Contato:<br>daarearj@gmail.com | +55 (21) 99905-1545</b>
+
 </footer>
+
 </body>
 </html>

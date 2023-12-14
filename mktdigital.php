@@ -1,3 +1,4 @@
+<?php require_once "controlleruserdata.php"; ?>
 <!doctype html>
 <html>
 <head>
@@ -19,7 +20,7 @@
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","UA-240370538-2");</script>
 <meta name=lomadee-verification content=23139291 />
 </head>
-<?php require_once "controlleruserdata.php"; ?>
+
 <?php 
 $email = $_SESSION['email'];
 $senha = $_SESSION['senha'];
@@ -46,66 +47,17 @@ if($email != false && $senha != false){
 <b>Olá, <?php echo $fetch_info['nome'];?></b>
 <button type="button" class="w3-button"><a href="logout-user.php">Sair</a></button>
 </div>
-<body id=bg><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Menu</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="home.php">Início</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="gravacao.php">Gravação</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="mixmaster.php">Mix/Master</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="beats.php">Beats</a>
-            </li>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="videoclipes.php">Video Clipes</a>
-            </li>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="distribuicaodigital.php">Distribuição Digital</a>
-            </li>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="mktdigital.php">Marketing Digital & Impulsionamento</a>
-            </li>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="playlists.php">Playlists</a>
-            </li>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contato.php">Contato</a>
-            </li>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="videos.php">Videos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="afiliados.php">Afiliados</a>
-            </li>
-            </ul>
-          </div>
-        </div>
-    </nav>
+
+<body id=bg>
+
 <header id=topo>
 <div id=logo>
-<img src=imgs/logonovodarj.png alt=Logo title=Logo>
+<img src="imgs/logonovodarj.png" alt="Logo" title="Logo">
 <div id=imagem>
-<img src=imgs/arquivos/banner.jpg width="720px" alt=Favela&Piano title=Favela&Piano>
+<img src=imgs/arquivos/banner.jpg width="100%" alt="Favela&Piano" title="Favela&Piano">
 </div>
 </div>
+
 <div class=blank>
 <div class-=links><b>
 siga nossas redes sociais:
@@ -138,23 +90,64 @@ https://wa.me/+5521999051545?text=Somos%20a%20Da%C3%81rea%20RJ!%20Atenderemos%20
 </div>
 </div>
 </header>
-<main id=conteudo><!-- BEGIN -->
-<script src="//ad.lomadee.com/banners/script.js?sourceId=37684855&dimension=3&height=600&width=120&method=0" type="text/javascript" language="javascript"></script>
-<!-- END -->
-<article id=img></article>
-<article class=espaco><b><h2>Marketing Digital & Impulsionamento</h2>Marketing Digital & Impulsionamento<br>Obtenha os melhores alcances e maior<br>streaming com as suas músicas, construa o seu público<br>tudo 100% orgânico e feitos à partir de direcionamento automático e<br>Google Ads.<br>
+
+<table>
+<nav id="menu">
+  <div class="botoes">
+    <a href="home.php">Inicio</a>
+    <a href="gravacao.php">Gravaçao</a>
+    <a href="mixmaster.php">Mix/Master</a>
+    <a href="beats.php">Beats</a>
+    <a href="videoclipes.php">VideoClipes</a>
+    <a href="distribuicaodigital.php">Distibuiçao Digital</a>
+    <a href="mktdigital.php">Marketing Digital</a>
+    <a href="playlists.php">Playlists</a>
+    <a href="videos.php">Videos</a>
+    <a href="afiliados.php">Afiliados</a>
+    <a href="contato.php">Contato</a>
+    <a href="novidades.php">Novidades</a>
+</nav>
+</table>
+<br>
+
+<main id=conteudo>
+  <table>
+  <div id="publi"></div>
+</table>
+
+<div id=img></div>
+<div class=espaco>
+  <b><h2>Marketing Digital & Impulsionamento</h2>
+  Marketing Digital & Impulsionamento<br>
+  Obtenha os melhores alcances e maior<br>
+  streaming com as suas músicas, construa o seu público<br>
+  tudo 100% orgânico e feitos à partir de direcionamento automático e<br>
+  Google Ads.<br>
 <p>Planos:</p>
-<p>(Spotify)<br>1k Plays = R$ 70
-<br>1k Plays + Ouvintes = R$ 100<br>1k seguidores = R$ 70<br>1k Ouvintes = R$ 70</p>
-<p>(Youtube)<br>1k Views = R$ 120<br>1k Inscritos = R$ 300</p>Caso opte por já efetuar o pagamento e<br>contratar o impulsionamento digital o nosso plano padrão é de 1k de plays<br>no spotify com duração de 1 mês por R$ 70,00.<br>Efetuando o pagamento é só mandar o link da sua música</b>
-</article><div class="form"><article class="form2">
+<p>(Spotify)<br>
+1k Plays = R$ 70
+<br>
+1k Plays + Ouvintes = R$ 100<br>
+1k seguidores = R$ 70<br>
+1k Ouvintes = R$ 70</p>
+<p>(Youtube)<br>
+1k Views = R$ 120<br>
+1k Inscritos = R$ 300</p>
+Caso opte por já efetuar o pagamento e
+<br>contratar o impulsionamento digital o nosso plano padrão é de 1k de plays
+<br>no spotify com duração de 1 mês por R$ 70,00.<br>
+Efetuando o pagamento é só mandar o link da sua música</b>
+</div>
+<div class="form">
+  <div class="form2">
+
 <?php 
 
 if(isset($_POST['submit']))
 
 {
 
-include_once('connectiondb.php');
+include_once('connection.php');
 
 $name = $_POST['name'];
 $email = $_POST['email'];
@@ -168,6 +161,7 @@ VALUES ('$name','$email','$telefone','$plano','$link','$mensagem')");
 
 }
 ?>
+
 <form action="pagamento.php" method="POST"><b>Marketing Digital
 </b><br><b>Escolha seu Impulsionamento:</b>
 <fieldset><br>
@@ -216,13 +210,17 @@ VALUES ('$name','$email','$telefone','$plano','$link','$mensagem')");
 </fieldset>
 </form>
 
-</article>
-<article><!-- BEGIN -->
-<script src="//ad.lomadee.com/banners/script.js?sourceId=37684855&dimension=15&height=600&width=160&method=0" type="text/javascript" language="javascript"></script>
-<!-- END --></article>
-<aside id=lateral></aside>
+</div>
+<div>
+
+</div>
+<div id=lateral></div>
 </main>
+
+<br><br>
+
 <footer class="style"><b>Contato:<br>daarearj@gmail.com | +55 (21) 99905-1545</b>
 </footer>
+
 </body>
 </html>
